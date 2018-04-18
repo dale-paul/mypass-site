@@ -1,0 +1,24 @@
+{
+  "name": "kochpass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "angularjs-toast": "^1.0.6",
+    "ng-toast": "^2.0.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "old-url": "git@github.com:dale-paul/mypass-site.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

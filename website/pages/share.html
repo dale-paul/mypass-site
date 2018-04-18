@@ -1,0 +1,16 @@
+<div class="jumbotron text-center" id="jumbo">
+    <section>
+    <div class="page-header" id="page-header">
+      <h3>MyPass</h3>
+      <p>A simple app to share secrets</p></div>
+</div>
+<div class="input-group">
+	<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></span>
+	<input type="input" class="form-control" id="password-link" value="{{message}}" readonly>
+	<span class="input-group-btn">
+		<button ng-click-copy="{{message}}" title="Copy to clipboard" class="btn btn-primary"><i class="fa fa-clipboard"></i> Copy</button>
+	</span>
+</div>
+<p>Your secret has been temporarily saved. Copy and send the following URL to your intended recipient.<br>
+	This link will expire <b>{{expirey|date:'medium'}}</b></p>
+

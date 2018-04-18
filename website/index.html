@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<!-- define angular app -->
+<html>
+
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="./css/custom.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:300,400,600,700,800">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/JustMaier/6ef7788709d675bd8230/raw/3d39d50e66d8d77e05656ed7dd09298be7e86f1f/ngClickCopy.js"></script>
+	<script src="./lib/script.js"></script>
+
+
+	<title>MyPass - A password sharing app</title>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-left hidden-xs" href="#/"><img src="images/lock-512.png" style="width: 50pt"></a>
+			</div>
+
+			<ul class="nav navbar-nav navbar-right hidden-xs">
+				<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+				<li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container"  ng-app="scotchApp" id="container">
+		<div class="row">
+			 <div class="col-sm-10" ng-view></div>
+		</div>
+	</div>
+	<div class="modal" id="spinner"><!-- Place at bottom of page --></div>
+</body>
+</html>
