@@ -8,7 +8,7 @@ from chalicelib import kmscrypto, dynamo
 from chalice import Chalice, Response, BadRequestError
 
 app = Chalice(app_name='password-site')
-app.debug = True
+app.debug = False
 
 @app.route('/{key}', methods=['GET'], cors=True)
 def index(key):
@@ -60,7 +60,6 @@ def storeSecret(secret,ttl):
     db = dynamo.SecretDB(os.environ["table"])
     key = id_generator()
     epoch = ttl2epoch(ttl)
-    print(epoch)
     expirey = epoch2String(epoch)
     data = crypt.encrypt(secret)
     url = ''.join([os.environ["hosturl"],'/#/', key])
