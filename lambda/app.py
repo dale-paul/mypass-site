@@ -67,7 +67,7 @@ def storeSecret(secret,ttl):
     return {"url": url, "expires" : expirey, "key" : key}
 
 if __name__ == "__main__":
-    os.environ["hosturl"] = 'http://reflectiveinc.net'
+    os.environ["hosturl"] = 'https://reflectiveinc.net'
     os.environ["kmskey"] = "password-site"
     os.environ["table"] = 'secrets'
     rc = storeSecret("this is my secret",300)
