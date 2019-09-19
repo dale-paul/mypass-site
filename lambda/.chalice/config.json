@@ -2,7 +2,7 @@
   "version": "2.0",
   "app_name": "password-site",
   "environment_variables": {
-    "hosturl": "http://reflectiveinc.net",
+    "hosturl": "https://reflectiveinc.net",
     "kmskey": "password-site",
     "table": "secrets"
   },      
