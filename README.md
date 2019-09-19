@@ -6,3 +6,5 @@
 
 [1]: https://media.readthedocs.org/pdf/chalice/latest/chalice.pdf
 [2]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+*\*now with sonarcloud integration*
