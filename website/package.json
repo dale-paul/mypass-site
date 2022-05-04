@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "dependencies": {
-    "angular": "^1.7.8",
+    "angular": "^1.8.3",
     "angular-animate": "^1.7.8",
     "angular-sanitize": "^1.7.8",
     "angularjs-toast": "^1.0.6",
