@@ -11,7 +11,7 @@
     "ng-toast": "^2.0.0"
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
